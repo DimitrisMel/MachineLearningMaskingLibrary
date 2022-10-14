@@ -6,13 +6,14 @@ This software has been tested on python 3.8.5, CUDA 10.1, CuDNN 7.6.5 and tensor
 The package dependencies are: imageio, numpy, keras and tensorflow
 
 
-# Function call
+## Function call
 
 neural_network(data, masking, orthogonal, category, block_size, CNN, epochs, batch_size, images, iterations)
 
 Train and evaluate a neural network with raw or masked data.
 
-Parameters
+###Parameters
+
 data: str or array-like, required
 If data is “mnist”, then the MNIST dataset it downloaded. If data is “cifar10”, then the CIFAR10 dataset is downloaded. If the data is str but not mnist or cifar10, then it is considered a path to get the data files from which must contain the files X_train.csv, y_train.csv, X_test.csv, y_test.csv. If the path of the files is the same as the path of the program, use the absolute path like data=”C:\Users\Username\ML Matrix Masking”. Finally, the data can be a python array or numpy array in the main memory, in the format of [[X_train][y_train][X_test][y_test]], where each of the 4 components is a 2D array (rows are records and columns are attributes).
 
